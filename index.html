@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NetHack Web</title>
+    <link rel="stylesheet" href="./styles.css?v=20260921-6" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hud">
+        <div id="engine-state">BOOTING</div>
+        <div id="engine-message">Waiting for engine startup…</div>
+      </header>
+
+      <section class="viewport-shell">
+        <div id="viewport" class="viewport" aria-label="Game viewport"></div>
+      </section>
+
+      <footer class="meter-row">
+        <span>HP</span>
+        <b>0/0</b>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script type="module" src="./app.js?v=20260921-28"></script>
+  </body>
+</html>
